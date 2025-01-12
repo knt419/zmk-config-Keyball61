@@ -23,8 +23,7 @@
 	
     kscan0: kscan {
         compatible = "zmk,kscan-composite";
-        label = "KSCAN";
-	columns = <14>;
+	columns = <7>;
         rows = <5>;
 
 	matrix1 {
