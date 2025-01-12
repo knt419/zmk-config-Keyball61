@@ -33,13 +33,13 @@
 
 	matrix2 {
 		kscan = <&kscan2>;
-		column-offset = <3>;
+		column-offset = <4>;
 	};
     };
 
-    kscan1: kscan_col2row {
+    kscan1: kscan_row2col {
 	compatible = "zmk,kscan-gpio-matrix";
-	diode-direction = "col2row";
+	diode-direction = "row2col";
 
 	row-gpios
         = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
@@ -56,9 +56,9 @@
 	;
     };
 
-    kscan2: kscan_row2col {
+    kscan2: kscan_col2row {
 	compatible = "zmk,kscan-gpio-matrix";
-	diode-direction = "row2col";
+	diode-direction = "col2row";
 
 	row-gpios
         = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
