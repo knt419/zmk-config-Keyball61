@@ -30,11 +30,6 @@
 	matrix1 {
 		kscan = <&kscan1>;
 	};
-
-	matrix2 {
-		kscan = <&kscan2>;
-		column-offset = <3>;
-	};
     };
 
     kscan1: kscan_col2row {
