@@ -26,12 +26,22 @@
         rows = <5>;
     };
 
-    kscan1: kscan_col2row {
+    kscan1: kscan_col2row_l {
 	compatible = "zmk,kscan-gpio-matrix";
 	diode-direction = "col2row";
     };
 
-    kscan2: kscan_row2col {
+    kscan2: kscan_row2col_l {
+	compatible = "zmk,kscan-gpio-matrix";
+	diode-direction = "row2col";
+    };
+
+    kscan3: kscan_col2row_r {
+	compatible = "zmk,kscan-gpio-matrix";
+	diode-direction = "col2row";
+    };
+
+    kscan4: kscan_row2col_r {
 	compatible = "zmk,kscan-gpio-matrix";
 	diode-direction = "row2col";
     };
