@@ -7,17 +7,15 @@
 #include "keyball61.dtsi"
 
 &kscan0 {
-    matrix1 {
+    matrix1: matrix1 {
         kscan = <&kscan1>;
         col-offset = <0>;
     };
 
-/*
-    matrix2 {
+    matrix2: matrix2 {
         kscan = <&kscan2>;
         col-offset = <3>;
     };
- */
 };
 
 &kscan1  {
