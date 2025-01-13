@@ -6,11 +6,7 @@
 
 #include "keyball61.dtsi"
 
-&kscan0: kscan {
-        compatible = "zmk,kscan-composite";
-	columns = <7>;
-        rows = <5>;
-
+&kscan0 {
 	matrix1 {
 		kscan = <&kscan1>;
 		col-offset = <0>;
@@ -20,13 +16,9 @@
 		kscan = <&kscan2>;
 		col-offset = <3>;
 	};
-
 };
 
-&kscan1: kscan_col2row {
-	compatible = "zmk,kscan-gpio-matrix";
-	diode-direction = "col2row";
-
+&kscan1  {
 	row-gpios
         = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
@@ -41,10 +33,7 @@
 	;
 };
 
-&kscan2: kscan_row2col {
-	compatible = "zmk,kscan-gpio-matrix";
-	diode-direction = "row2col";
-
+&kscan2 {
 	row-gpios
         = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
