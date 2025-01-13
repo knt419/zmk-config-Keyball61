@@ -19,31 +19,4 @@
             RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5) RC(4,6)  RC(4,7) RC(4,8)                           RC(4,12) RC(4,13)
         >;
     };
-	
-    kscan0: kscan {
-        compatible = "zmk,kscan-composite";
-	columns = <7>;
-        rows = <5>;
-
-	matrix1 {
-		kscan = <&kscan1>;
-	};
-
-	matrix2 {
-		kscan = <&kscan2>;
-		col-offset = <3>;
-	};
-
-    };
-
-    kscan1: kscan_col2row {
-	compatible = "zmk,kscan-gpio-matrix";
-	diode-direction = "col2row";
-    };
-
-    kscan2: kscan_row2col {
-	compatible = "zmk,kscan-gpio-matrix";
-	diode-direction = "row2col";
-    };
-
 };
