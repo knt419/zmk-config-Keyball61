@@ -30,16 +30,7 @@
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-charlieplex";
-    };
-
-    kscan1: kscan_col2row {
-	    compatible = "zmk,kscan-gpio-matrix";
-	    diode-direction = "col2row";
-    };
-
-    kscan2: kscan_row2col {
-	    compatible = "zmk,kscan-gpio-matrix";
-	    diode-direction = "row2col";
+        wakeup-source;
     };
 
 };
